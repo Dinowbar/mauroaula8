@@ -7,17 +7,17 @@ $senha = '';
 
 $conexao = new PDO("mysql:host=$servidor;dbname=$banco", $usuario, $senha);
 
-$codigoSQL = "INSERT INTO `quetimeteu` (`id`, `nome`, `pontos`) VALUES (NULL, :nm, :pts)";
+$codigoSQL = "INSERT INTO `times` (`id`, `nome`, `pontos`) VALUES (NULL, :nm, :pnts)";
 
 try {
     $comando = $conexao->prepare($codigoSQL);
 
-    $resultado = $comando->execute(array('nm' => $_GET['nome'], 'pts' => $_GET['pontos']));
+    $resultado = $comando->execute(array('nm' => $_GET['nome'], 'pnts' => $_GET['pts']));
 
     if($resultado) {
-	echo "Comando executado!";
+	echo "Executado!";
     } else {
-	echo "Erro ao executar o comando!";
+	echo "Erro ao executar!";
     }
 } catch (Exception $e) {
     echo "Erro $e";
