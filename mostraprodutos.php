@@ -16,7 +16,7 @@ $senha = '';
 
 $conexao = new PDO("mysql:host=$servidor;dbname=$banco", $usuario, $senha);
 
-$comandoSQL = 'SELECT * FROM `produto`';
+$comandoSQL = 'SELECT * FROM `produtos`';
 
 $comando = $conexao->prepare($comandoSQL);
 $resultado = $comando->execute();
@@ -29,9 +29,9 @@ if($resultado) {
 	    
         echo $linha['nome'];
         echo "<br>";
-        echo $linha['descricao'];
+        echo $linha['desc'];
         echo "<br>";
-        echo $linha['preco'];
+        echo $linha['prec'];
         echo "<br>";
         echo $linha['url'];
         echo "<br>";
