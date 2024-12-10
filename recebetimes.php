@@ -10,8 +10,8 @@
 	<label for="nome">Nome:</label>
 	<input type="text" name="nome"><br>
 
-    <label for="pontos">Pontos:</label>
-	<input type="text" name="pontos"><br>
+    <label for="pts">Pontos:</label>
+	<input type="text" name="pts"><br>
 
 	<input type="submit">
     </form>
