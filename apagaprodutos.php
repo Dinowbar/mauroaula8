@@ -8,7 +8,7 @@
 <body>
 <?php
     $id = $_GET['id'];
-    $comandoSQL = "DELETE FROM produto WHERE `produto`.`id` = $id";
+    $comandoSQL = "DELETE FROM produtos WHERE `produtos`.`id` = $id";
 
     $servidor = 'localhost';
     $banco = 'loja';
