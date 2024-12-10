@@ -7,7 +7,7 @@ $senha = '';
 
 $conexao = new PDO("mysql:host=$servidor;dbname=$banco", $usuario, $senha);
 
-$codigoSQL = "INSERT INTO `times` (`id`, `nome`, `pontos`) VALUES (NULL, :nm, :pnts)";
+$codigoSQL = "INSERT INTO `seutime` (`id`, `nome`, `pontos`) VALUES (NULL, :nm, :pnts)";
 
 try {
     $comando = $conexao->prepare($codigoSQL);
