@@ -15,7 +15,7 @@ $senha = '';
 
 $conexao = new PDO("mysql:host=$servidor;dbname=$banco", $usuario, $senha);
 
-$comandoSQL = 'SELECT * FROM `quetimeteu`';
+$comandoSQL = 'SELECT * FROM `seutime`';
 
 $comando = $conexao->prepare($comandoSQL);
 $resultado = $comando->execute();
