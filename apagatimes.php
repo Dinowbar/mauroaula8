@@ -8,7 +8,7 @@
 <body>
 <?php
     $id = $_GET['id'];
-    $comandoSQL = "DELETE FROM quetimeteu WHERE `times`.`id` = $id";
+    $comandoSQL = "DELETE FROM seutime WHERE `seutime`.`id` = $id";
 
     $servidor = 'localhost';
     $banco = 'times';
