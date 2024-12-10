@@ -21,9 +21,9 @@
 	$resultado = $conexao->exec($comandoSQL);
 
 	if($resultado != 0) {
-	    echo "Item apagado!";
+	    echo "Apagado!";
 	} else {
-	    echo "Erro ao apagar o item!";
+	    echo "Erro ao apagar!";
 	}
     } catch (Exception $e) {
 	echo "Erro $e";
