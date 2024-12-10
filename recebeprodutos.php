@@ -10,14 +10,14 @@
 	<label for="nome">Nome:</label>
 	<input type="text" name="nome"><br>
 
-    <label for="descricao">Descrição:</label>
-	<input type="text" name="descricao"><br>
+    <label for="desc">Descrição:</label>
+	<input type="text" name="desc"><br>
 
     <label for="url">URL:</label>
 	<input type="text" name="url"><br>
 
-    <label for="preco">Preço:</label>
-	<input type="number" name="preco"><br>
+    <label for="prec">Preço:</label>
+	<input type="number" name="prec"><br>
 
 	<input type="submit">
     </form>
