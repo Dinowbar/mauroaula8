@@ -24,13 +24,13 @@ if($resultado) {
     echo "Mostrando resultado:<br>";
 
     while($linha = $comando->fetch()) {
-        echo $linha['titulo'];
+        echo $linha['tit'];
         echo "<br>";
-        echo $linha['idioma'];
+        echo $linha['idio'];
         echo "<br>";
-        echo $linha['quantidade'];
+        echo $linha['qntp'];
         echo "<br>";
-        echo $linha['editora'];
+        echo $linha['edit'];
         echo "<br>";
         echo $linha['data'];
         echo "<br>";
