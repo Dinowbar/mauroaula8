@@ -7,12 +7,12 @@ $senha = '';
 
 $conexao = new PDO("mysql:host=$servidor;dbname=$banco", $usuario, $senha);
 
-$codigoSQL = "INSERT INTO `produto` (`id`, `nome`, `descricao`,`url`,`preco`) VALUES (NULL, :nm, :dsc,:url ,:pc)";
+$codigoSQL = "INSERT INTO `produtos` (`id`, `nome`, `descricao`,`url`,`preco`) VALUES (NULL, :nm, :dsc,:url ,:pc)";
 
 try {
     $comando = $conexao->prepare($codigoSQL);
 
-    $resultado = $comando->execute(array('nm' => $_GET['nome'], 'dsc' => $_GET['descricao'],'url' => $_GET['url'],'pc' => $_GET['preco'], ));
+    $resultado = $comando->execute(array('nm' => $_GET['nome'], 'dsc' => $_GET['desc'],'url' => $_GET['url'],'pc' => $_GET['prec'], ));
 
     if($resultado) {
 	echo "Comando executado!";
