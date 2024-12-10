@@ -7,17 +7,17 @@
 </head>
 <body>
     <form action="salvalivros.php">
-	<label for="titulo">Título:</label>
-	<input type="text" name="titulo"><br>
+	<label for="tit">Título:</label>
+	<input type="text" name="tit"><br>
 
-    <label for="idioma">Idioma:</label>
-	<input type="text" name="idioma"><br>
+    <label for="idio">Idioma:</label>
+	<input type="text" name="idio"><br>
 
-    <label for="quantidade">Quantidade de páginas:</label>
-	<input type="text" name="quantidade"><br>
+    <label for="qntp">Quantidade de páginas:</label>
+	<input type="text" name="qntp"><br>
 
-    <label for="editora">Editora:</label>
-	<input type="text" name="editora"><br>
+    <label for="ed">Editora:</label>
+	<input type="text" name="ed"><br>
 
     <label for="data">Data da publicação:</label>
 	<input type="date" name="data"><br>
