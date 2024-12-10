@@ -30,7 +30,7 @@ if($resultado) {
         echo "<br>";
         echo $linha['qntp'];
         echo "<br>";
-        echo $linha['edit'];
+        echo $linha['ed'];
         echo "<br>";
         echo $linha['data'];
         echo "<br>";
